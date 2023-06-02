@@ -1,0 +1,36 @@
+header {
+    background: $bodyColor;
+    min-height: 75px;
+    padding-top: 15px;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+  
+    &__link {
+      width: max-content;
+      padding: 10px 24px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 100px;
+      color: #fff !important;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      white-space: nowrap;
+      &:hover {
+        background: rgba(255, 255, 255, 0.311);
+        transition: all 0.3s;
+        scale: 0.9;
+      }
+    }
+    &__img {
+      width: 144px;
+      height: 48px;
+    }
+  }
+  
+  
+  

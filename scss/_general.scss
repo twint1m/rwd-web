@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  height: 100%;
+  background: $bodyColor;
+}
+* {
+  overflow-x: hidden;
+}
+p {
+  color: $greyTextColor;
+}
+button {
+  background: $btnColor;
+  border-radius: 100px;
+  color: #fff;
+  transition: all 0.3s;
+  &:hover {
+    background: #b2024b;
+    transition: all 0.3s;
+  }
+}
+
+picture {
+    height: max-content;
+    grid-area: img; 
+    width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.visually-hidden{
+  position: absolute;
+  left: -200vh;
+}
+
+a{
+  color: #000;
+  &:active {
+    background: #e21f70;
+  }
+}

@@ -1,0 +1,348 @@
+// Media 320px
+@media (min-width: 320px) {
+  .section {
+    &__btn {
+      padding: 16px;
+    }
+  }
+  .advantage {
+    &__btn {
+      padding: 16px 45px;
+    }
+  }
+  .tiktok {
+    &__btn {
+      padding: 17px 25px;
+      white-space: nowrap;
+      overflow: hidden;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+  }
+}
+
+// Media 375px
+
+
+// Media 768px
+@media (min-width: 768px) {
+    .getstart {
+        &__text{
+            left: 40%;
+        }
+    }
+    .partners{
+        &__wrapper{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .hero{
+      &__img{
+        width: max-content;
+      }
+    }
+    .advantage{
+      &__img{
+        width: max-content;
+      }
+    }
+    .getmoving{
+      &__img{
+        width: max-content;
+      }
+    }
+
+}
+// Media 1000px
+@media (min-width: 1000px) {
+  .advantage__wrapper{
+    gap: 30px;
+  }
+  .advantage {
+    display: grid;
+    column-gap: 128px;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.4fr);
+    grid-template-areas:
+      "img title"
+      "img text"
+      "img btn";
+    &__img {
+      // grid-area: 1/1/3/1;
+      grid-area: img;
+    }
+    &__title {
+      // grid-area: 1/2/1/2;
+      grid-area: title;
+      align-self: end;
+      font-size: 2.25rem;
+      overflow: hidden;
+    }
+    &__text {
+      // grid-area: 2/2/2/2;
+      grid-area: text;
+      font-size: 1.313rem;
+      overflow: hidden;
+      &:nth-child(3) {
+        align-self: center;
+      }
+    }
+    &__btn {
+      // grid-area: 3/2/3/2;
+      align-self: center;
+      grid-area: btn;
+      font-size: 1.125rem;
+    }
+    &__wrapper {
+      gap: 16px 127px;
+      grid-area: icons;
+    }
+    &:nth-child(2) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 0.3fr);
+      grid-template-areas:
+        "title img"
+        "text img"
+        "icons img"
+        "btn img";
+    }
+    &__wrapper {
+      gap: 0;
+      align-self: start;
+    }
+    &__inner {
+      align-self: center;
+      margin-bottom: 15px;
+    }
+  }
+  .footer {
+    &__text {
+      flex-direction: row;
+      gap: 5px;
+    }
+    &__inner {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__wrapper {
+      align-items: center;
+    }
+  }
+  .getstart {
+    &__text{
+        left: 43%;
+    }
+    &__wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+    }
+}
+}
+// Media 1440px
+@media (min-width: 1440px) {
+  header {
+    padding-top: 0;
+    min-height: 130px;
+  }
+  .container {
+    padding: 0;
+    max-width: 1146px;
+    margin: 0 auto;
+  }
+  .nav {
+    &__logo {
+      margin-top: 29px;
+    }
+    &__link {
+      margin-top: 47px;
+      font-size: 1rem;
+    }
+    &__img {
+      width: 230px;
+      height: 77px;
+    }
+  }
+  footer {
+    padding-top: 49px;
+    &__copyright {
+      flex-direction: row;
+      gap: 4px;
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+  }
+
+  .partners{
+    display: flex;
+      justify-content: center;
+      gap: 20px;
+      scale: 1.77;
+  }
+  .hero {
+
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 0.5fr);
+      grid-template-rows: repeat(2, 0.5fr);
+      align-items: start;
+      align-content: start;
+      gap: 0px 61px;
+      grid-template-areas:
+        "text img"
+        "btn img";
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 62px;
+      text-align: left;
+      overflow: visible;
+    }
+    &__btn {
+      padding: 16px 48px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    &__prompt {
+      font-size: 13px;
+      line-height: 17px;
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+  .getstart {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+    &__title {
+      font-size: 2.625rem;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+  }
+  .tiktok {
+    &__wrapper {
+      padding: 0;
+      overflow: visible;
+      max-width: 100%;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 0.19fr);
+      // grid-template-areas:
+      // "title phone"
+      // "title phone"
+      // "text phone"
+      // "text2 phone"
+      // "btn phone"
+      // "btn phone";
+    }
+
+    &__title {
+      grid-area: title;
+      overflow: visible;
+      grid-area: 2/1/2/1;
+      justify-self: baseline;
+      margin-left: 94px;
+      font-size: 2.625rem;
+    }
+    &__text {
+      overflow: visible;
+      grid-area: 3/1/3/1;
+      margin-left: 100px;
+      font-size: 1.125rem;
+    }
+    &__text:nth-child(2) {
+      overflow: visible;
+      grid-area: 4/1/4/1;
+    }
+    &__btn {
+      width: 363px;
+      height: 55px;
+      grid-area: 5/1/5/1;
+      justify-self: baseline;
+      padding-left: 43px;
+      &::before {
+        content: "";
+        display: block;
+        background-image: url(../svg/main-svg/arrow.svg);
+        z-index: 999;
+        width: 18px;
+        height: 14px;
+        margin-left: 10px;
+      }
+    }
+    &__phone {
+      display: block;
+      align-self: end;
+      grid-area: 1/2/8/2;
+    }
+
+  }
+  .getmoving {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+          "title img"
+          "text img";
+        column-gap: 128px;
+    }
+    
+    &__title {
+      grid-area: title;
+      align-self: center;
+      justify-self: baseline;
+      font-size: 2.625rem;
+      align-self: end;
+    }
+    &__img {
+      grid-area: img;
+      width: 100%;
+    }
+    &__text {
+      grid-area: text;
+      font-size: 1.313rem;
+    }
+  }
+  .advantage{
+    &__img{
+      width: 100%;
+    }
+    &__text{
+      text-align: left;
+    }
+    &__title{
+      text-align: left;
+    }
+    &__wrapper{
+      justify-items: left;
+    }
+    &__btn{
+      display: grid;
+      margin: 0;
+    }
+  }
+}

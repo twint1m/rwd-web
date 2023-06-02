@@ -1,0 +1,31 @@
+footer{
+    min-height: 120px;
+    border: 1px solid black;
+    padding-top: 36px;
+    background: #fff;
+  }
+  .footer {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text {
+      margin-bottom: 18px;
+      color: #42454d;
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    &__copyright {
+      display: flex;
+      flex-direction: column;
+    }
+    &__link:hover{
+      svg path {
+        fill: #1a1a1a97;
+        transition: all 0.3s;
+      }
+    }
+  }
